@@ -5,6 +5,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    margin: 0;
 }
 
 .calculator {
@@ -12,23 +13,24 @@ body {
     padding: 20px;
     border-radius: 15px;
     box-shadow: 0 4px 15 px rgba(0,0,0,0.2);
-    width: 260px;
+    width: 300px;
 }
 
 #display {
     width: 100%;
-    height: 50px;
-    font-size: 1.5em;
+    height: 60px;
+    font-size: 1.8em;
     text-align: right;
     margin-bottom: 15px;
     padding: 10px;
+    border: none;
     border-radius: 10px;
     background: #eee;
 }
 
 .buttons {
     display: grid;
-    grid-template-columns: repeat(4, 1 fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 10px;
 }
 
@@ -45,12 +47,14 @@ body {
 .btn:hover {
     background: #ddd;
 }
-
+.zero{ 
+    grid-column: span 2; /* Making the button wider (2 spans) */
+}
 .equal {
-    grid-column: span 2;
+    grid-row: span 2; /* Making the button taller (2 spans) */
     background: #4caf50;
     color: white;
 }
-equal:hover {
+.equal:hover {
     background: #45a049;
 }
