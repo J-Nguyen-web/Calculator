@@ -6,20 +6,22 @@
     <title>Web Calculator</title>
     <link rel="stylesheet" href="style.css">
 </head>
+<script src="script.js" defer></script> 
+<!-- defer tell the browser to run the script but only afer the html is loaded, bcoz the display.elements will be not loaded     -->
 
 <body>
     <div class="calculator">
         <input type="text" id="display" disabled>
         <div class="buttons">
             <button class="btn" onclick="clearDisplay()">C</button>
-            <button class="btn" onclick="appendValue('/')">/</button>
-            <button class="btn" onclick="appendValue('*')">*</button>
-            <button class="btn" onclick="appendValue('-')">-</button>
+            <button class="btn" onclick="setOperator('/')">/</button>
+            <button class="btn" onclick="setOperator('*')">*</button>
+            <button class="btn" onclick="setOperator('-')">-</button>
             
             <button class="btn" onclick="appendValue('7')">7</button>
             <button class="btn" onclick="appendValue('8')">8</button>
             <button class="btn" onclick="appendValue('9')">9</button>
-            <button class="btn" onclick="appendValue('+')">+</button>
+            <button class="btn" onclick="setOperator('+')">+</button>
 
             <button class="btn" onclick="appendValue('4')">4</button>
             <button class="btn" onclick="appendValue('5')">5</button>
@@ -35,7 +37,7 @@
         </div>
     </div>
 </body>
-<script src="script.js"></script>
-<!-- its down here bcoz the html must load first, otherwise all the elements will be still null
-later i will put window.onload or derf -->
+<!--<script src="script.js"></script>
+ its down here bcoz the html must load first, otherwise all the elements will be still null
+ later i will put window.onload or derf -->
 </html>
