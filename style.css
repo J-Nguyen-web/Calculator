@@ -18,7 +18,7 @@ body {
 
 #display {
     width: 100%;
-    height: 60px;
+    height: 80px;
     font-size: 1.8em;
     text-align: right;
     margin-bottom: 15px;
@@ -26,6 +26,22 @@ body {
     border: none;
     border-radius: 10px;
     background: #eee;
+    flex-direction: column;
+    justify-content: space-between;
+    display: flex;
+    overflow: hidden;
+    
+}
+
+#expression {
+    font-size: 1.2em;
+    color: #555;
+    min-height: 23px;
+}
+
+#result {
+    font-size: 1.8em;
+    font-weight: bold;
 }
 
 .buttons {

@@ -1,4 +1,6 @@
-let display =  document.getElementById('display');
+// let display =  document.getElementById('display');
+let expressionDisplay =  document.getElementById('expression');
+let resultDisplay =  document.getElementById('result');
 
 let firstNumber = '';
 let secondNumber = '';
@@ -13,11 +15,10 @@ function appendValue(value) {
     
     if (operator === '') {
         firstNumber += value;
-        console.log(firstNumber)
-        display.value = firstNumber;
+        expressionDisplay.textContent = firstNumber;
     } else {
         secondNumber += value;
-        display.value = secondNumber;
+        expressionDisplay.textContent = firstNumber + ' ' + operator + ' '+ secondNumber;
     }
 }
 
@@ -26,6 +27,7 @@ function setOperator(op){
     if(secondNumber !== '') calculate();
     operator = op;
     reset = true;
+    expressionDisplay.textContent = firstNumber + ' ' + operator
     
 }
 
@@ -33,7 +35,8 @@ function clearDisplay() {
     firstNumber = '';
     secondNumber = '';
     operator = '';
-    display.value = '';
+    expressionDisplay.textContent = '';
+    resultDisplay.textContent = '';
 }
 
 function calculate() {
@@ -64,7 +67,8 @@ function calculate() {
         default:
             return;
     }
-    display.value = result;
+    resultDisplay.textContent = result;
+    expressionDisplay.textContent = firstNumber + ' ' + operator + ' ' + secondNumber
     firstNumber = result.toString();
     secondNumber = '';
     operator = '';

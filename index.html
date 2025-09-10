@@ -11,7 +11,10 @@
 
 <body>
     <div class="calculator">
-        <input type="text" id="display" disabled>
+        <div id="display">
+            <div id="expression"></div>
+            <div id="result"></div>
+        </div>
         <div class="buttons">
             <button class="btn" onclick="clearDisplay()">C</button>
             <button class="btn" onclick="setOperator('/')">/</button>
