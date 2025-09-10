@@ -9,11 +9,15 @@ let reset= false;
 
 function appendValue(value) {
     if (reset){
-        display.value = '';
+        secondNumber = '';
         reset = false;
     }
     
     if (operator === '') {
+        if(result) {
+            firstNumber = '';
+            resultDisplay.textContent = '';
+        }
         firstNumber += value;
         expressionDisplay.textContent = firstNumber;
     } else {
