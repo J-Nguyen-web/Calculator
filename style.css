@@ -63,11 +63,15 @@ body {
 .btn:hover {
     background: #ddd;
 }
-.zero{ 
+.zero { 
     grid-column: span 2; /* Making the button wider (2 spans) */
 }
-.equal {
+
+.plus{
     grid-row: span 2; /* Making the button taller (2 spans) */
+}
+.equal {
+    grid-column: span 3;
     background: #4caf50;
     color: white;
 }

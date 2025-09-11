@@ -14,7 +14,7 @@ function appendValue(value) {
     }
     
     if (operator === '') {
-        if(result) {
+        if(result === '') {
             firstNumber = '';
             resultDisplay.textContent = '';
         }
@@ -44,7 +44,7 @@ function clearDisplay() {
 }
 
 function calculate() {
-    
+        
         // display.value = eval(display.value);
         // eval is built-in js function, its dangerous bcoz malicious code can be executed by others
         // later we will use other expressions
@@ -66,7 +66,7 @@ function calculate() {
             result = num1 * num2;
         break;
         case '/':
-            result = num1 / num2;
+            result = num1 / num2 !== 0 ? num1 / num2 : "Error";
         break;
         default:
             return;
@@ -76,4 +76,34 @@ function calculate() {
     firstNumber = result.toString();
     secondNumber = '';
     operator = '';
+
+    
+}
+
+function percent() {
+    
+    let result;
+
+    if(firstNumber !== '' && operator !== '' && secondNumber !== '') {
+        let thePercent = (parseFloat(secondNumber) / 100);
+
+    switch (operator) {
+    case '+':
+        result = firstNumber + (firstNumber * thePercent);
+    break;
+    case '-':
+        result = firstNumber - (firstNumber * thePercent);
+    break;
+    case '*':
+        result = firstNumber * (firstNumber * thePercent);
+    break;
+    case '/':
+        result = firstNumber / (firstNumber * thePercent) !== 0 ? firstNumber / thePercent : "Error";
+    break;
+    default:
+        return;
+    }
+        resultDisplay.textContent = result ;
+        expressionDisplay.textContent = `${firstNumber}  ${operator} ${firstNumber * thePercent} (${secondNumber}%)`
+    }
 }
