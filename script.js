@@ -6,6 +6,7 @@ let firstNumber = '';
 let secondNumber = '';
 let operator = '';
 let reset= false;
+let result;
 
 function appendValue(value) {
     if (reset){
@@ -13,13 +14,14 @@ function appendValue(value) {
         reset = false;
     }
     
-    if (operator === '') {
-        if(result === '') {
-            firstNumber = '';
-            resultDisplay.textContent = '';
-        }
+    if (operator === '' && result === '') {
         firstNumber += value;
         expressionDisplay.textContent = firstNumber;
+    }  else if (operator === '' && result !== '') {
+        result = '';
+        resultDisplay.textContent = '';
+        firstNumber = value;
+        expressionDisplay.textContent = firstNumber
     } else {
         secondNumber += value;
         expressionDisplay.textContent = firstNumber + ' ' + operator + ' '+ secondNumber;
@@ -49,7 +51,7 @@ function calculate() {
         // eval is built-in js function, its dangerous bcoz malicious code can be executed by others
         // later we will use other expressions
 
-    let result;
+    
     const num1 = parseFloat(firstNumber);
     const num2 = parseFloat(secondNumber);
 
@@ -117,5 +119,14 @@ function square() {
 }
 
 function squareRoot() {
-    
+    if(firstNumber !== '' && operator === '' && secondNumber ==='') {
+        if(firstNumber < 0 ) return NaN;
+        let root = firstNumber / 2;
+        for (let i = 0; i < 20; i++) {
+            root = (root + firstNumber / root) / 2;
+        }
+        firstNumber = root.toFixed(6)
+        resultDisplay.textContent = root.toFixed(6);
+        expressionDisplay.textContent = `sqr root(${resultDisplay.textContent})`
+    }
 }
