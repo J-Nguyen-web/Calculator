@@ -107,3 +107,15 @@ function percent() {
         expressionDisplay.textContent = `${firstNumber}  ${operator} ${firstNumber * thePercent} (${secondNumber}%)`
     }
 }
+
+function square() {
+    if(firstNumber !== '' && operator === '' && secondNumber ==='') {
+        firstNumber = (parseFloat(firstNumber) * parseFloat(firstNumber)).toString();
+        resultDisplay.textContent = firstNumber;;
+        expressionDisplay.textContent = `sqr(${resultDisplay.textContent})`
+    }
+}
+
+function squareRoot() {
+    
+}

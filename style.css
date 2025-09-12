@@ -47,6 +47,7 @@ body {
 .buttons {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    /* ще се повтарят по четири на ред */
     gap: 10px;
 }
 
