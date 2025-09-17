@@ -75,21 +75,31 @@ body {
 
 .plus{
     grid-row: span 2; /* Making the button taller (2 spans) */
-    background: linear-gradient(145deg, #028b16, #06f);
-    box-shadow: 0 0 15px #00ffcc, inset 0 0 8 px rgba(0, 255, 204, 0.4);
+    padding: 18px;
+    font-size: 1.2em;
+    font-family: inherit;
+    border: none;
+    border-radius: 11px;
+    cursor: pointer;
+    color: #0ff;
+    background: linear-gradient(145deg, #0f2027, #203a43);
+    box-shadow: 0 0 11px rgba(0,255, 255, 0.3),
+                inset 0 0 8px rgba(0, 255, 255, 0.2);
+    transition: all 0.2s ease-in-out;
 }
 
 .plus:hover {
-    background: linear-gradient(145deg,  #00ffff, #0099ff);
-    box-shadow: 0 0 25px #00ffff, inset 0 0 11px rgba(0, 255, 204, 0.6);
+    background: linear-gradient(145deg, #203a43, #2c5364);
+    color: #fff;
+    box-shadow: 0 0 20px #0ff, inset 0 0 12px rgba(0,255,255,0.6);
 }
 .equal {
     grid-column: span 3;
-    background: linear-gradient(145deg, #028b16, #333399);
+    background: linear-gradient(180deg, #0ff, #333399);
     color: #fff;
     box-shadow: 0 0 15px #067ae0, inset 0 0 8px rgba(0, 217, 255, 0.6);
 }
 .equal:hover {
-    background: linear-gradient(145deg, #028b16, #5555ff);
-    box-shadow: 0 0 25px #028b16, inset 0 0 11px rgba(0, 217, 255, 0.6);
+    background: linear-gradient(145deg,  #00ffff, #0099ff);
+    box-shadow: 0 0 25px #00ffff, inset 0 0 11px rgba(0, 255, 204, 0.6);
 }
