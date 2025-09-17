@@ -1,6 +1,7 @@
 body {
-    font-family: Arial, sans-serif;
-    background: #f4f4f9;
+    background: radial-gradient(circle at top, #0f2027, #203a43, #2c5364);
+    color: #fff;
+    font-family: 'Orbitron', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,60 +10,64 @@ body {
 }
 
 .calculator {
-    background: #fff;
+    background: rgba(15,20,30, 0.9);
     padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 4px 15 px rgba(0,0,0,0.2);
-    width: 300px;
+    border: 2px solid #0ff;
+    border-radius: 20px;
+    box-shadow: 0 0 30px #0ff, inset 0 0 20px rgba(0,255,255,0.2);
+    width: 340px;
+    backdrop-filter: blur(6px);
 }
 
 #display {
-    width: 100%;
-    height: 80px;
-    font-size: 1.8em;
     text-align: right;
-    margin-bottom: 15px;
-    padding: 10px;
-    border: none;
-    border-radius: 10px;
-    background: #eee;
-    flex-direction: column;
-    justify-content: space-between;
-    display: flex;
-    overflow: hidden;
-    
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #0ff;
+    border-radius: 11px;
+    background: rgba(0,0,0, 0.6);
+    box-shadow: inset 0 0 10px rgba(0, 255, 255, 0.5);
 }
 
 #expression {
     font-size: 1.2em;
-    color: #555;
+    color: #00e0ff;
     min-height: 23px;
+    opacity: 0.8;
 }
 
 #result {
-    font-size: 1.8em;
+    font-size: 2em;
     font-weight: bold;
+    color: #0ff;
+    text-shadow: 0 0 11px #0ff;
 }
 
 .buttons {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     /* ще се повтарят по четири на ред */
-    gap: 10px;
+    gap: 11px;
 }
 
 .btn {
-    padding: 20px;
+    padding: 18px;
     font-size: 1.2em;
+    font-family: inherit;
     border: none;
-    border-radius: 10px;
-    background: #f0f0f0;
+    border-radius: 11px;
     cursor: pointer;
-    transition: background 0.2s;
+    color: #0ff;
+    background: linear-gradient(145deg, #0f2027, #203a43);
+    box-shadow: 0 0 11px rgba(0,255, 255, 0.3),
+                inset 0 0 8px rgba(0, 255, 255, 0.2);
+    transition: all 0.2s ease-in-out;
 }
 
 .btn:hover {
-    background: #ddd;
+    background: linear-gradient(145deg, #203a43, #2c5364);
+    color: #fff;
+    box-shadow: 0 0 20px #0ff, inset 0 0 12px rgba(0,255,255,0.6);
 }
 .zero { 
     grid-column: span 2; /* Making the button wider (2 spans) */
@@ -70,12 +75,21 @@ body {
 
 .plus{
     grid-row: span 2; /* Making the button taller (2 spans) */
+    background: linear-gradient(145deg, #028b16, #06f);
+    box-shadow: 0 0 15px #00ffcc, inset 0 0 8 px rgba(0, 255, 204, 0.4);
+}
+
+.plus:hover {
+    background: linear-gradient(145deg,  #00ffff, #0099ff);
+    box-shadow: 0 0 25px #00ffff, inset 0 0 11px rgba(0, 255, 204, 0.6);
 }
 .equal {
     grid-column: span 3;
-    background: #4caf50;
-    color: white;
+    background: linear-gradient(145deg, #028b16, #333399);
+    color: #fff;
+    box-shadow: 0 0 15px #067ae0, inset 0 0 8px rgba(0, 217, 255, 0.6);
 }
 .equal:hover {
-    background: #45a049;
+    background: linear-gradient(145deg, #028b16, #5555ff);
+    box-shadow: 0 0 25px #028b16, inset 0 0 11px rgba(0, 217, 255, 0.6);
 }
