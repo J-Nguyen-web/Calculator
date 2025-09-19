@@ -17,7 +17,7 @@
 
   ## Demo
 
-  [Live Demo](https://github.com/J-Nguyen-web/Calculator)
+  [Live Demo](https://J-Nguyen-web.github.io/Calculator)
 
   ---
 
