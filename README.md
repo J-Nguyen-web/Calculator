@@ -32,9 +32,13 @@
 ## Project Structuce
 
 calculator/
+
 |-index.html # Main HTML file
+
 |-style.css # Styling (neon glow sci-fi theme)
+
 |-script.js # Calculator logic
+
 |-README.md # Project documentation
 
 ---
