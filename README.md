@@ -2,7 +2,7 @@
 
   A sleek, neon-glowing calculator built with **HTML, CSS and Javascript**.
   Features a dual-line display (expression + result), extended math operation, and a futuristic **Sci-Fi UI**
-  ![screenshot]<img alt="image" src="[https://ibb.co/rKtM5ySH]" />
+  ![screenshot](<a href="https://ibb.co/3mD47hZf"><img src="https://i.ibb.co/ZznGVTDH/calc.jpg" alt="calc" border="0"></a)
 
   ---
 
