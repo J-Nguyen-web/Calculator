@@ -61,7 +61,7 @@ calculator/
 
    # on windows
    start index.html
----
+```
 ** No server needed - it's a pure client-side web app.**
 
 How to Use
