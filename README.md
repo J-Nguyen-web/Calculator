@@ -61,8 +61,7 @@ calculator/
 
    # on windows
    start index.html
-4. adlalkdsa
-
+---
 ** No server needed - it's a pure client-side web app.**
 
 How to Use
