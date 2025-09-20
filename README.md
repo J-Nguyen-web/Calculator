@@ -72,12 +72,14 @@ calculator/
 - C  hoose an operator (`+`, `-` , `x`, `/` )
 - Use = to calculate the result
 
+
 **Special functions:**
   - `C` - Clear Everything
   - `%` - Percentage
   - `√` - Square root
   - `x²`- Square
   - `1/x` - Reciprocal
+  - 
 
 **Future Improvements**
   - Add scientific functions: sin, cos, tan, log, ln
@@ -85,4 +87,5 @@ calculator/
   - Add a calculation history panel
 
 **Licence**
+
 This project is open-source
