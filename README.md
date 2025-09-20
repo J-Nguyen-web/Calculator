@@ -62,7 +62,7 @@ calculator/
    # on windows
    start index.html
 
-no server needed - it's a pure client-side web app.
+# No server needed - it's a pure client-side web app.
 
 How to Use
 Click number buttons to input values
