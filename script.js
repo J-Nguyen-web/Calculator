@@ -130,3 +130,63 @@ function squareRoot() {
         expressionDisplay.textContent = `sqr root(${resultDisplay.textContent})`
     }
 }
+
+function backspace() {
+    if(operator === '') {
+        if(firstNumber.length > 0) firstNumber = firstNumber.slice(0, -1)
+    } else if (secondNumber.length > 0) {
+      secondNumber = secondNumber.slice(0, -1);
+    } else {
+        operator = '';
+    }
+    updateExpressionText();
+}
+
+// keyboard support
+window.addEventListener('keydown', (event) => {
+
+    const key = event.key;
+
+    if ((key >= '0' && key <= '9') || key === '.') {
+        appendValue(key);
+        event.preventDefault();
+        return;
+    }
+
+    if (key === '+' || key === '-' || key === '*' || key === '/') {
+        setOperator(key);
+        event.preventDefault()
+    }
+
+    if (key === 'Enter' || key === '=') {
+        calculate();
+        event.preventDefault();
+        return;
+    }
+
+    if (key === 'Backspace') {
+        backspace();
+        event.preventDefault();
+        return;
+    }
+
+    if (key === 'Escape') {
+        clearDisplay();
+        event.preventDefault();
+        return;
+    }
+
+    if (key === '%') {
+        percent();
+        event.preventDefault();
+        return;
+    }
+
+    if (key === ' ') {        
+        event.preventDefault();
+        return;
+    }
+});
+
+// initialization
+clearDisplay();
