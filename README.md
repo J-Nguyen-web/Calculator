@@ -7,7 +7,11 @@
   <a href="https://ibb.co/3mD47hZf"><p><img width="200px" src="https://i.ibb.co/ZznGVTDH/calc.jpg" alt="calc" border="1"></p></a>
 
   ---
+  ## Demo
 
+  [Live Demo](https://j-nguyen-web.github.io/Calculator/)
+
+  ---
   ## Features
 
   - **Dual Display** - show the full expresion on the first line and result one the second
@@ -17,11 +21,7 @@
 
   ---
 
-  ## Demo
 
-  [Live Demo](https://j-nguyen-web.github.io/Calculator/)
-
-  ---
 
   ## Technologies Used
 
