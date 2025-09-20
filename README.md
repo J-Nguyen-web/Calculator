@@ -79,12 +79,13 @@ calculator/
   - `√` - Square root
   - `x²`- Square
   - `1/x` - Reciprocal
-  - 
+    
 
 **Future Improvements**
   - Add scientific functions: sin, cos, tan, log, ln
   - Support for keyboard input
   - Add a calculation history panel
+    
 
 **Licence**
 
