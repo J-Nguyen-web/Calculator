@@ -66,21 +66,23 @@ calculator/
 ```
 # No server needed - it's a pure client-side web app.
 
-How to Use
-Click number buttons to input values
-choose an operator (+, - , x, / )
-Use = to calculate the result
-Special functions:
-  C - Clear Everything
-  % - Percentage
-  √ - Square root
-  x²- Square
-  1/x - Reciprocal
+**How to Use**
 
-Future Improvements
-  Add scientific functions: sin, cos, tan, log, ln
-  Support for keyboard input
-  Add a calculation history panel
+- Click number buttons to input values
+- C  hoose an operator (`+`, `-` , `x`, `/` )
+- Use = to calculate the result
 
-Licence
+**Special functions:**
+  -`C` - Clear Everything
+  -`%` - Percentage
+  -`√` - Square root
+  -`x²`- Square
+  -`1/x` - Reciprocal
+
+**Future Improvements**
+  - Add scientific functions: sin, cos, tan, log, ln
+  - Support for keyboard input
+  - Add a calculation history panel
+
+**Licence**
 This project is open-source
