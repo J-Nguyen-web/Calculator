@@ -50,12 +50,12 @@ calculator/
    git clone https://github.com/J-Nguyen-web/Calculator
    
 2. Open the project folder:
-   bash
+   ```bash
 
    cd calculator
 
 3. Calculator index.html in your browser:
-
+  ```bash
    # on mac/linux
    open index.html
 
