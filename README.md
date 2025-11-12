@@ -4,7 +4,7 @@
   Features a dual-line display (expression + result), extended math operation, and a futuristic **Sci-Fi UI**
   
   Screenshot
-  <a href="https://ibb.co/3mD47hZf"><p><img width="200px" src="https://i.ibb.co/ZznGVTDH/calc.jpg" alt="calc" border="1"></p></a>
+  <a href="https://j-nguyen-web.github.io/Calculator/"><p><img width="200px" src="https://i.ibb.co/ZznGVTDH/calc.jpg" alt="calc" border="1"></p></a>
 
   ---
   ## Demo
